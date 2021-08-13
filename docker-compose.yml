@@ -9,7 +9,7 @@ services:
     environment:
       - PORT=2456
       - NAME="s2b3k"
-      - WORLD="Dedicated"
+      - WORLD="KamilNowySwiat"
       - PASSWORD="haslomaslo"
       - TZ=Europe/Warsaw
       - PUBLIC=1
@@ -22,6 +22,6 @@ services:
       - AUTO_BACKUP_ON_UPDATE=1
       - AUTO_BACKUP_ON_SHUTDOWN=1
     volumes:
-      - ./valheim/saves:/home/steam/.config/unity3d/IronGate/Valheim
+      - /home/ubuntu/valheim/saves:/home/steam/.config/unity3d/IronGate/Valheim
       - ./valheim/server:/home/steam/valheim
       - ./valheim/backups:/home/steam/backups
